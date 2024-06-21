@@ -25,7 +25,15 @@ exec_always --no-startup-id xrandr -s 1920x1080
 exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id ~/.config/i3/launch_alternating_layout.sh
 exec_always --no-startup-id picom
-exec_always --no-startup-id feh --bg-fill ~/Downloads/wallpaper.jpg
+
+# Set wallpaper 
+
+#exec_always --no-startup-id feh --bg-fill ~/Downloads/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/Repositories/anime/raid-in-the-dark.png
+
+#exec_always --no-startup-id xwinwrap -fs -ov -ni -- mpv -wid %WID -loop ~/Downloads/PPRtXsWb88zQhKu_Pokemon\ Cute\ Pikachu\ Live\ Wallpaper.mp4
+
+
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
